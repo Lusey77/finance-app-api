@@ -1,0 +1,28 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Service.Class\\FinanceApp.Service.Class.csproj",
+    "projectName": "FinanceApp.Service.Class",
+    "projectPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Service.Class\\FinanceApp.Service.Class.csproj",
+    "outputPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Service.Class\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netstandard1.4"
+    ],
+    "frameworks": {
+      "netstandard1.4": {
+        "projectReferences": {}
+      }
+    }
+  },
+  "frameworks": {
+    "netstandard1.4": {
+      "dependencies": {
+        "NETStandard.Library": {
+          "target": "Package",
+          "version": "1.6.1"
+        }
+      }
+    }
+  }
+}

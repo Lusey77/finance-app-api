@@ -1,0 +1,40 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Test\\FinanceApp.Test.csproj",
+    "projectName": "FinanceApp.Test",
+    "projectPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Test\\FinanceApp.Test.csproj",
+    "outputPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Test\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp1.1"
+    ],
+    "frameworks": {
+      "netcoreapp1.1": {
+        "projectReferences": {}
+      }
+    }
+  },
+  "frameworks": {
+    "netcoreapp1.1": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "target": "Package",
+          "version": "1.1.2"
+        },
+        "Microsoft.NET.Test.Sdk": {
+          "target": "Package",
+          "version": "15.3.0-preview-20170618-03"
+        },
+        "xunit": {
+          "target": "Package",
+          "version": "2.2.0"
+        },
+        "xunit.runner.visualstudio": {
+          "target": "Package",
+          "version": "2.2.0"
+        }
+      }
+    }
+  }
+}

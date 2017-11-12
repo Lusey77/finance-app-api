@@ -1,0 +1,28 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Infrastructure.Data\\FinanceApp.Infrastructure.Data.csproj",
+    "projectName": "FinanceApp.Infrastructure.Data",
+    "projectPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Infrastructure.Data\\FinanceApp.Infrastructure.Data.csproj",
+    "outputPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Infrastructure.Data\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netstandard1.4"
+    ],
+    "frameworks": {
+      "netstandard1.4": {
+        "projectReferences": {}
+      }
+    }
+  },
+  "frameworks": {
+    "netstandard1.4": {
+      "dependencies": {
+        "NETStandard.Library": {
+          "target": "Package",
+          "version": "1.6.1"
+        }
+      }
+    }
+  }
+}

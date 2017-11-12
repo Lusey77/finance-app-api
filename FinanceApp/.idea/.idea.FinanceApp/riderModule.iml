@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RIDER_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.reporters.netstandard15.dll">
+      <sourceFolder url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.reporters.netstandard15.dll" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.utility.netstandard15.dll">
+      <sourceFolder url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.utility.netstandard15.dll" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll">
+      <sourceFolder url="file://$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../..">
+      <sourceFolder url="file://$MODULE_DIR$/../../FinanceApp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../FinanceApp.Domain.Entities" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../FinanceApp.Domain.Interfaces" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../FinanceApp.Infrastructure.Data" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../FinanceApp.Service.Class" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../FinanceApp.Services.Interfaces" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../FinanceApp.Test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Test" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../../FinanceApp.Domain.Entities/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../FinanceApp.Domain.Entities/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../FinanceApp.Domain.Interfaces/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../FinanceApp.Domain.Interfaces/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../FinanceApp.Infrastructure.Data/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../FinanceApp.Infrastructure.Data/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../FinanceApp.Service.Class/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../FinanceApp.Service.Class/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../FinanceApp.Services.Interfaces/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../FinanceApp.Services.Interfaces/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../FinanceApp.Test/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../FinanceApp.Test/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../FinanceApp/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../FinanceApp/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Test/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Test/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../packages" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

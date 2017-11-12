@@ -1,0 +1,9 @@
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Model\bin\Debug\netcoreapp2.0\FinanceApp.Model.deps.json
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Model\bin\Debug\netcoreapp2.0\FinanceApp.Model.dll
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Model\bin\Debug\netcoreapp2.0\FinanceApp.Model.pdb
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Model\obj\Debug\netcoreapp2.0\FinanceApp.Model.csprojResolveAssemblyReference.cache
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Model\obj\Debug\netcoreapp2.0\FinanceApp.Model.csproj.CoreCompileInputs.cache
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Model\obj\Debug\netcoreapp2.0\FinanceApp.Model.AssemblyInfoInputs.cache
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Model\obj\Debug\netcoreapp2.0\FinanceApp.Model.AssemblyInfo.cs
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Model\obj\Debug\netcoreapp2.0\FinanceApp.Model.dll
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Model\obj\Debug\netcoreapp2.0\FinanceApp.Model.pdb

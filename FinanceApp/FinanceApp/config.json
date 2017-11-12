@@ -1,0 +1,11 @@
+{
+    "Logging": {
+        "IncludeScopes": false,
+        "LogLevel": {
+            "Default": "Warning"
+        }
+    },
+    "ConnectionStrings": {
+        "ConnectionString": "Server=localhost;Trusted_Connection=True;MultipleActiveResultSets=True;Initial Catalog=Finances"
+    }
+}
