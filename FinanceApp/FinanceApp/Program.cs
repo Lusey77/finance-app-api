@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Autofac;
 using FinanceApp.Infrastructure.Data;
+using FinanceApp.Service.Class;
 using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
@@ -38,7 +39,7 @@ namespace FinanceApp
                 .AddJsonFile("config.json")
                 .Build();
 
-            var builder = new DbContextOptionsBuilder<FinanceAppContext>();
+            DbContextOptionsBuilder<FinanceAppContext> builder = new DbContextOptionsBuilder<FinanceAppContext>();
 
             var connectionString = configuration.GetConnectionString("ConnectionString");
 

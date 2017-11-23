@@ -10,10 +10,11 @@
   "profiles": {
     "Local": {
       "commandName": "IISExpress",
-      "launchBrowser": false,
+      "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "applicationUrl": "http://localhost:54739/"
     },
     "FinanceApp": {
       "commandName": "Project",

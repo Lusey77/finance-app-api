@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "285a3e63975b1bb39406526377337351d0465bf2"
+    "signature": "825c80d92bd358ff0e3a6f382a3f50aa178581b8"
   },
   "compilationOptions": {
     "defines": [
@@ -25,7 +25,11 @@
         "dependencies": {
           "Autofac": "4.6.2",
           "Autofac.Extensions.DependencyInjection": "4.2.0",
+          "Autofac.WebApi": "3.1.0",
+          "FinanceApp.Core": "1.0.0",
           "FinanceApp.Infrastructure.Data": "1.0.0",
+          "FinanceApp.Service.Class": "1.0.0",
+          "FinanceApp.Service.Interface": "1.0.0",
           "Microsoft.AspNetCore": "2.0.0",
           "Microsoft.AspNetCore.Mvc": "2.0.0",
           "Microsoft.AspNetCore.StaticFiles": "2.0.0",
@@ -66,6 +70,17 @@
         },
         "compile": {
           "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Autofac.WebApi/3.1.0": {
+        "dependencies": {
+          "Autofac": "4.6.2"
+        },
+        "runtime": {
+          "lib/net40/Autofac.Integration.WebApi.dll": {}
+        },
+        "compile": {
+          "lib/net40/Autofac.Integration.WebApi.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -2711,6 +2726,14 @@
           "System.Xml.XPath": "4.3.0"
         }
       },
+      "FinanceApp.Core/1.0.0": {
+        "runtime": {
+          "FinanceApp.Core.dll": {}
+        },
+        "compile": {
+          "FinanceApp.Core.dll": {}
+        }
+      },
       "FinanceApp.Domain.Entity/1.0.0": {
         "runtime": {
           "FinanceApp.Domain.Entity.dll": {}
@@ -2721,6 +2744,7 @@
       },
       "FinanceApp.Infrastructure.Data/1.0.0": {
         "dependencies": {
+          "Autofac.WebApi": "3.1.0",
           "FinanceApp.Domain.Entity": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.0.0",
@@ -2731,6 +2755,50 @@
         },
         "compile": {
           "FinanceApp.Infrastructure.Data.dll": {}
+        }
+      },
+      "FinanceApp.Model/1.0.0": {
+        "runtime": {
+          "FinanceApp.Model.dll": {}
+        },
+        "compile": {
+          "FinanceApp.Model.dll": {}
+        }
+      },
+      "FinanceApp.ModelConverter/1.0.0": {
+        "dependencies": {
+          "FinanceApp.Domain.Entity": "1.0.0",
+          "FinanceApp.Model": "1.0.0"
+        },
+        "runtime": {
+          "FinanceApp.ModelConverter.dll": {}
+        },
+        "compile": {
+          "FinanceApp.ModelConverter.dll": {}
+        }
+      },
+      "FinanceApp.Service.Class/1.0.0": {
+        "dependencies": {
+          "FinanceApp.Infrastructure.Data": "1.0.0",
+          "FinanceApp.ModelConverter": "1.0.0",
+          "FinanceApp.Service.Interface": "1.0.0"
+        },
+        "runtime": {
+          "FinanceApp.Service.Class.dll": {}
+        },
+        "compile": {
+          "FinanceApp.Service.Class.dll": {}
+        }
+      },
+      "FinanceApp.Service.Interface/1.0.0": {
+        "dependencies": {
+          "FinanceApp.Model": "1.0.0"
+        },
+        "runtime": {
+          "FinanceApp.Service.Interface.dll": {}
+        },
+        "compile": {
+          "FinanceApp.Service.Interface.dll": {}
         }
       },
       "Microsoft.NETCore.App/2.0.0": {
@@ -2930,6 +2998,13 @@
       "sha512": "sha512-cqBmgg9y7ahGbt7CPdvZFL6bA0PEwFyhIofUoUxEteZc+d0yNnE6ZvIWxHEM2F2HPJlC9SRnHWiZQq8r53moAw==",
       "path": "autofac.extensions.dependencyinjection/4.2.0",
       "hashPath": "autofac.extensions.dependencyinjection.4.2.0.nupkg.sha512"
+    },
+    "Autofac.WebApi/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yzOdwWZ7w4ojD8uLKcXQE7d/cjTSVpgZSjK9oaE/goPJQHgVLad/yua78j+o+NthFEkaZG2030F3gRRpfPo6qA==",
+      "path": "autofac.webapi/3.1.0",
+      "hashPath": "autofac.webapi.3.1.0.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",
@@ -4450,12 +4525,37 @@
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
     },
+    "FinanceApp.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "FinanceApp.Domain.Entity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "FinanceApp.Infrastructure.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FinanceApp.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FinanceApp.ModelConverter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FinanceApp.Service.Class/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FinanceApp.Service.Interface/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

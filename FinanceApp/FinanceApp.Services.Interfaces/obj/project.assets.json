@@ -196,6 +196,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "FinanceApp.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/FinanceApp.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FinanceApp.Model.dll": {}
+        }
       }
     }
   },
@@ -656,10 +666,16 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "FinanceApp.Model/1.0.0": {
+      "type": "project",
+      "path": "../FinanceApp.Model/FinanceApp.Model.csproj",
+      "msbuildProject": "../FinanceApp.Model/FinanceApp.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "FinanceApp.Model >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -695,7 +711,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Model\\FinanceApp.Model.csproj": {
+              "projectPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Model\\FinanceApp.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

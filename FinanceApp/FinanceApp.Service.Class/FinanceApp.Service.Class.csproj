@@ -4,4 +4,10 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FinanceApp.Infrastructure.Data\FinanceApp.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\FinanceApp.ModelConverter\FinanceApp.ModelConverter.csproj" />
+    <ProjectReference Include="..\FinanceApp.Services.Interfaces\FinanceApp.Service.Interface.csproj" />
+  </ItemGroup>
+
 </Project>

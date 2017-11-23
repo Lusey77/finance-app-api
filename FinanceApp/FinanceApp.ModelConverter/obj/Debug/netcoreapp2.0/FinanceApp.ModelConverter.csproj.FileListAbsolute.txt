@@ -1,0 +1,13 @@
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.ModelConverter\bin\Debug\netcoreapp2.0\FinanceApp.ModelConverter.deps.json
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.ModelConverter\bin\Debug\netcoreapp2.0\FinanceApp.ModelConverter.dll
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.ModelConverter\bin\Debug\netcoreapp2.0\FinanceApp.ModelConverter.pdb
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.ModelConverter\bin\Debug\netcoreapp2.0\FinanceApp.Domain.Entity.dll
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.ModelConverter\bin\Debug\netcoreapp2.0\FinanceApp.Model.dll
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.ModelConverter\bin\Debug\netcoreapp2.0\FinanceApp.Domain.Entity.pdb
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.ModelConverter\bin\Debug\netcoreapp2.0\FinanceApp.Model.pdb
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.ModelConverter\obj\Debug\netcoreapp2.0\FinanceApp.ModelConverter.csprojResolveAssemblyReference.cache
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.ModelConverter\obj\Debug\netcoreapp2.0\FinanceApp.ModelConverter.csproj.CoreCompileInputs.cache
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.ModelConverter\obj\Debug\netcoreapp2.0\FinanceApp.ModelConverter.AssemblyInfoInputs.cache
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.ModelConverter\obj\Debug\netcoreapp2.0\FinanceApp.ModelConverter.AssemblyInfo.cs
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.ModelConverter\obj\Debug\netcoreapp2.0\FinanceApp.ModelConverter.dll
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.ModelConverter\obj\Debug\netcoreapp2.0\FinanceApp.ModelConverter.pdb

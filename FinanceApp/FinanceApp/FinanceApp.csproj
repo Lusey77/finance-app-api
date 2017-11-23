@@ -14,6 +14,7 @@
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.6.2" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.0" />
+    <PackageReference Include="Autofac.WebApi" Version="3.1.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.0.0" />
@@ -29,7 +30,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FinanceApp.Core\FinanceApp.Core.csproj" />
     <ProjectReference Include="..\FinanceApp.Infrastructure.Data\FinanceApp.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\FinanceApp.Service.Class\FinanceApp.Service.Class.csproj" />
+    <ProjectReference Include="..\FinanceApp.Services.Interfaces\FinanceApp.Service.Interface.csproj" />
   </ItemGroup>
 
 </Project>

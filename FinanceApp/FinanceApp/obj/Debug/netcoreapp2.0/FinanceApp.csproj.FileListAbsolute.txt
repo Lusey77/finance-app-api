@@ -13,3 +13,13 @@ C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp\bin\Debug\
 C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp\bin\Debug\netcoreapp2.0\FinanceApp.Domain.Entity.pdb
 C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp\obj\Debug\netcoreapp2.0\FinanceApp.dll
 C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp\obj\Debug\netcoreapp2.0\FinanceApp.pdb
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp\bin\Debug\netcoreapp2.0\FinanceApp.Model.dll
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp\bin\Debug\netcoreapp2.0\FinanceApp.Service.Interface.dll
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp\bin\Debug\netcoreapp2.0\FinanceApp.Service.Interface.pdb
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp\bin\Debug\netcoreapp2.0\FinanceApp.Model.pdb
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp\bin\Debug\netcoreapp2.0\FinanceApp.Core.dll
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp\bin\Debug\netcoreapp2.0\FinanceApp.ModelConverter.dll
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp\bin\Debug\netcoreapp2.0\FinanceApp.Service.Class.dll
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp\bin\Debug\netcoreapp2.0\FinanceApp.Core.pdb
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp\bin\Debug\netcoreapp2.0\FinanceApp.Service.Class.pdb
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp\bin\Debug\netcoreapp2.0\FinanceApp.ModelConverter.pdb

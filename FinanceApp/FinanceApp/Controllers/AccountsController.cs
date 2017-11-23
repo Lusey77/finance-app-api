@@ -1,38 +1,61 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Collections.Generic;
+using System.Linq;
+using FinanceApp.Model;
+using FinanceApp.Services.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FinanceApp.Controllers
 {
-    [Produces("application/json")]
-    [Route("api/Accounts")]
+    [Route("api/[controller]")]
     public class AccountsController : Controller
     {
+        private readonly IAccountService _accountService;
+        public AccountsController(IAccountService accountService)
+        {
+            _accountService = accountService;
+        }
+
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok();
+            IEnumerable<AccountModel> accounts = _accountService.GetAccounts();
+
+            if (!accounts.Any()) return NotFound();
+
+            return Ok(accounts);
         }
 
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            return Ok();
+            AccountModel account = _accountService.GetAccount(id);
+
+            if (account == null) return NotFound();
+
+            return Ok(account);
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] string value)
+        public IActionResult Post([FromBody] CreateAccountModel model)
         {
+            _accountService.CreateAccount(model);
+
             return Ok();
         }
 
-        [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] string value)
+        [HttpPut]
+        public IActionResult Put([FromBody] UpdateAccountModel model)
         {
+            _accountService.UpdateAccount(model);
+
             return Ok();
         }
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
+            _accountService.DeleteAccount(id);
+
             return Ok();
         }
     }

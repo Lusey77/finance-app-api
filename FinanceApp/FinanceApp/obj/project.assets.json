@@ -29,6 +29,18 @@
           "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
         }
       },
+      "Autofac.WebApi/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "3.1.0"
+        },
+        "compile": {
+          "lib/net40/Autofac.Integration.WebApi.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Autofac.Integration.WebApi.dll": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -3496,6 +3508,16 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "FinanceApp.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/FinanceApp.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FinanceApp.Core.dll": {}
+        }
+      },
       "FinanceApp.Domain.Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -3510,6 +3532,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "Autofac.WebApi": "3.1.0",
           "FinanceApp.Domain.Entity": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.0.0",
@@ -3520,6 +3543,58 @@
         },
         "runtime": {
           "bin/placeholder/FinanceApp.Infrastructure.Data.dll": {}
+        }
+      },
+      "FinanceApp.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/FinanceApp.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FinanceApp.Model.dll": {}
+        }
+      },
+      "FinanceApp.ModelConverter/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "FinanceApp.Domain.Entity": "1.0.0",
+          "FinanceApp.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FinanceApp.ModelConverter.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FinanceApp.ModelConverter.dll": {}
+        }
+      },
+      "FinanceApp.Service.Class/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "FinanceApp.Infrastructure.Data": "1.0.0",
+          "FinanceApp.ModelConverter": "1.0.0",
+          "FinanceApp.Service.Interface": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FinanceApp.Service.Class.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FinanceApp.Service.Class.dll": {}
+        }
+      },
+      "FinanceApp.Service.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "FinanceApp.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FinanceApp.Service.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FinanceApp.Service.Interface.dll": {}
         }
       }
     }
@@ -3547,6 +3622,17 @@
         "autofac.extensions.dependencyinjection.nuspec",
         "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll",
         "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.xml"
+      ]
+    },
+    "Autofac.WebApi/3.1.0": {
+      "sha512": "yzOdwWZ7w4ojD8uLKcXQE7d/cjTSVpgZSjK9oaE/goPJQHgVLad/yua78j+o+NthFEkaZG2030F3gRRpfPo6qA==",
+      "type": "package",
+      "path": "autofac.webapi/3.1.0",
+      "files": [
+        "autofac.webapi.3.1.0.nupkg.sha512",
+        "autofac.webapi.nuspec",
+        "lib/net40/Autofac.Integration.WebApi.dll",
+        "lib/net40/Autofac.Integration.WebApi.xml"
       ]
     },
     "Libuv/1.10.0": {
@@ -9633,6 +9719,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "FinanceApp.Core/1.0.0": {
+      "type": "project",
+      "path": "../FinanceApp.Core/FinanceApp.Core.csproj",
+      "msbuildProject": "../FinanceApp.Core/FinanceApp.Core.csproj"
+    },
     "FinanceApp.Domain.Entity/1.0.0": {
       "type": "project",
       "path": "../FinanceApp.Domain.Entities/FinanceApp.Domain.Entity.csproj",
@@ -9642,13 +9733,37 @@
       "type": "project",
       "path": "../FinanceApp.Infrastructure.Data/FinanceApp.Infrastructure.Data.csproj",
       "msbuildProject": "../FinanceApp.Infrastructure.Data/FinanceApp.Infrastructure.Data.csproj"
+    },
+    "FinanceApp.Model/1.0.0": {
+      "type": "project",
+      "path": "../FinanceApp.Model/FinanceApp.Model.csproj",
+      "msbuildProject": "../FinanceApp.Model/FinanceApp.Model.csproj"
+    },
+    "FinanceApp.ModelConverter/1.0.0": {
+      "type": "project",
+      "path": "../FinanceApp.ModelConverter/FinanceApp.ModelConverter.csproj",
+      "msbuildProject": "../FinanceApp.ModelConverter/FinanceApp.ModelConverter.csproj"
+    },
+    "FinanceApp.Service.Class/1.0.0": {
+      "type": "project",
+      "path": "../FinanceApp.Service.Class/FinanceApp.Service.Class.csproj",
+      "msbuildProject": "../FinanceApp.Service.Class/FinanceApp.Service.Class.csproj"
+    },
+    "FinanceApp.Service.Interface/1.0.0": {
+      "type": "project",
+      "path": "../FinanceApp.Services.Interfaces/FinanceApp.Service.Interface.csproj",
+      "msbuildProject": "../FinanceApp.Services.Interfaces/FinanceApp.Service.Interface.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Autofac >= 4.6.2",
       "Autofac.Extensions.DependencyInjection >= 4.2.0",
+      "Autofac.WebApi >= 3.1.0",
+      "FinanceApp.Core >= 1.0.0",
       "FinanceApp.Infrastructure.Data >= 1.0.0",
+      "FinanceApp.Service.Class >= 1.0.0",
+      "FinanceApp.Service.Interface >= 1.0.0",
       "Microsoft.AspNetCore >= 2.0.0",
       "Microsoft.AspNetCore.Mvc >= 2.0.0",
       "Microsoft.AspNetCore.StaticFiles >= 2.0.0",
@@ -9693,8 +9808,17 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
+            "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Services.Interfaces\\FinanceApp.Service.Interface.csproj": {
+              "projectPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Services.Interfaces\\FinanceApp.Service.Interface.csproj"
+            },
             "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Infrastructure.Data\\FinanceApp.Infrastructure.Data.csproj": {
               "projectPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Infrastructure.Data\\FinanceApp.Infrastructure.Data.csproj"
+            },
+            "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Service.Class\\FinanceApp.Service.Class.csproj": {
+              "projectPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Service.Class\\FinanceApp.Service.Class.csproj"
+            },
+            "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Core\\FinanceApp.Core.csproj": {
+              "projectPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Core\\FinanceApp.Core.csproj"
             }
           }
         }
@@ -9708,6 +9832,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Autofac.WebApi": {
+            "target": "Package",
+            "version": "3.1.0"
+          },
           "Microsoft.AspNetCore": {
             "target": "Package",
             "version": "2.0.0"
@@ -9761,5 +9889,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Autofac.WebApi 3.1.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Autofac.WebApi",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }

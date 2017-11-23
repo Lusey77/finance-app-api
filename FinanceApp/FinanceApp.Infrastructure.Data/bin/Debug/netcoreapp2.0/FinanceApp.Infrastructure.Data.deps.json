@@ -1,13 +1,14 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "c5b46de410b03e167e968273ab8cca805d8402f7"
+    "signature": "b8903268af48068a68c4e3c67dc1a6e0a6b65e12"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "FinanceApp.Infrastructure.Data/1.0.0": {
         "dependencies": {
+          "Autofac.WebApi": "3.1.0",
           "FinanceApp.Domain.Entity": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.0.0",
@@ -15,6 +16,19 @@
         },
         "runtime": {
           "FinanceApp.Infrastructure.Data.dll": {}
+        }
+      },
+      "Autofac/3.1.0": {
+        "runtime": {
+          "lib/net40/Autofac.dll": {}
+        }
+      },
+      "Autofac.WebApi/3.1.0": {
+        "dependencies": {
+          "Autofac": "3.1.0"
+        },
+        "runtime": {
+          "lib/net40/Autofac.Integration.WebApi.dll": {}
         }
       },
       "Microsoft.CSharp/4.4.0": {},
@@ -451,6 +465,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Autofac/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+HfsT9Da2caJkKucxTKegc4gz3YUMXOsxmoYHvtVh+kdkPPCr4NHW4u09UcNkdXovkJrWCMQYv74k6i0LY1Mgw==",
+      "path": "autofac/3.1.0",
+      "hashPath": "autofac.3.1.0.nupkg.sha512"
+    },
+    "Autofac.WebApi/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yzOdwWZ7w4ojD8uLKcXQE7d/cjTSVpgZSjK9oaE/goPJQHgVLad/yua78j+o+NthFEkaZG2030F3gRRpfPo6qA==",
+      "path": "autofac.webapi/3.1.0",
+      "hashPath": "autofac.webapi.3.1.0.nupkg.sha512"
     },
     "Microsoft.CSharp/4.4.0": {
       "type": "package",
