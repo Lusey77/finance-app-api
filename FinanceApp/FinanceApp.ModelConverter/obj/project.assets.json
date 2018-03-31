@@ -197,6 +197,16 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "FinanceApp.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/FinanceApp.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FinanceApp.Core.dll": {}
+        }
+      },
       "FinanceApp.Domain.Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -210,6 +220,9 @@
       "FinanceApp.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "FinanceApp.Domain.Entity": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/FinanceApp.Model.dll": {}
         },
@@ -677,6 +690,11 @@
         "netstandard.library.nuspec"
       ]
     },
+    "FinanceApp.Core/1.0.0": {
+      "type": "project",
+      "path": "../FinanceApp.Core/FinanceApp.Core.csproj",
+      "msbuildProject": "../FinanceApp.Core/FinanceApp.Core.csproj"
+    },
     "FinanceApp.Domain.Entity/1.0.0": {
       "type": "project",
       "path": "../FinanceApp.Domain.Entities/FinanceApp.Domain.Entity.csproj",
@@ -690,6 +708,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "FinanceApp.Core >= 1.0.0",
       "FinanceApp.Domain.Entity >= 1.0.0",
       "FinanceApp.Model >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
@@ -697,6 +716,7 @@
   },
   "packageFolders": {
     "C:\\Users\\Kaleb\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -712,11 +732,13 @@
       "outputPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.ModelConverter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\Kaleb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -728,11 +750,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
+            "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Model\\FinanceApp.Model.csproj": {
+              "projectPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Model\\FinanceApp.Model.csproj"
+            },
             "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Domain.Entities\\FinanceApp.Domain.Entity.csproj": {
               "projectPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Domain.Entities\\FinanceApp.Domain.Entity.csproj"
             },
-            "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Model\\FinanceApp.Model.csproj": {
-              "projectPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Model\\FinanceApp.Model.csproj"
+            "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Core\\FinanceApp.Core.csproj": {
+              "projectPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Core\\FinanceApp.Core.csproj"
             }
           }
         }
@@ -749,7 +774,7 @@
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },

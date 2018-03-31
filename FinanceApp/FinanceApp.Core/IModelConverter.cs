@@ -1,4 +1,4 @@
-﻿namespace FinanceApp.ModelConverter
+﻿namespace FinanceApp.Core
 {
     public interface IModelConverter<TInput, TOutput>
     {

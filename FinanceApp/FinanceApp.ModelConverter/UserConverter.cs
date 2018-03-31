@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using FinanceApp.Domain.Entity;
+﻿using FinanceApp.Core;
 using FinanceApp.Model;
+using FinanceApp.Domain.Entity;
 
 namespace FinanceApp.ModelConverter
 {

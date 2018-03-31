@@ -19,6 +19,27 @@ namespace FinanceApp.Service.Class
             _converter = converter;
         }
 
+
+        public IEnumerable<Account> Get()
+        {
+            IEnumerable<Account> accounts = _uow.RepositoryOf<Account>()
+                .FindWhere(account => account.State == State.Inactive);
+
+            return accounts;
+        }
+
+
+
+        public IEnumerable<Account> GetInactiveAccounts()
+        {
+            IEnumerable<Account> accounts = _uow.RepositoryOf<Account>()
+                .FindWhere(account => account.State == State.Inactive);
+
+            return accounts;
+        }
+
+
+
         public IEnumerable<AccountModel> GetAccounts()
         {
             return 

@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 using Autofac;
-using Autofac.Core;
 using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -56,6 +52,8 @@ namespace FinanceApp
             // Add framework services.
             services.AddDbContext<FinanceAppContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("ConnectionString")));
+
+            services.AddAuthentication();
 
             services.AddMvc();
 

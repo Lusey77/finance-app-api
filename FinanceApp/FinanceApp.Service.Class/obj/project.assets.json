@@ -918,6 +918,16 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
+      "FinanceApp.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/FinanceApp.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FinanceApp.Core.dll": {}
+        }
+      },
       "FinanceApp.Domain.Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -948,6 +958,9 @@
       "FinanceApp.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "FinanceApp.Domain.Entity": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/FinanceApp.Model.dll": {}
         },
@@ -959,6 +972,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "FinanceApp.Core": "1.0.0",
           "FinanceApp.Domain.Entity": "1.0.0",
           "FinanceApp.Model": "1.0.0"
         },
@@ -3492,6 +3506,11 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "FinanceApp.Core/1.0.0": {
+      "type": "project",
+      "path": "../FinanceApp.Core/FinanceApp.Core.csproj",
+      "msbuildProject": "../FinanceApp.Core/FinanceApp.Core.csproj"
+    },
     "FinanceApp.Domain.Entity/1.0.0": {
       "type": "project",
       "path": "../FinanceApp.Domain.Entities/FinanceApp.Domain.Entity.csproj",
@@ -3528,6 +3547,7 @@
   },
   "packageFolders": {
     "C:\\Users\\Kaleb\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -3543,11 +3563,13 @@
       "outputPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Service.Class\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\Kaleb\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -3559,11 +3581,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Services.Interfaces\\FinanceApp.Service.Interface.csproj": {
-              "projectPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Services.Interfaces\\FinanceApp.Service.Interface.csproj"
-            },
             "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Infrastructure.Data\\FinanceApp.Infrastructure.Data.csproj": {
               "projectPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Infrastructure.Data\\FinanceApp.Infrastructure.Data.csproj"
+            },
+            "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Services.Interfaces\\FinanceApp.Service.Interface.csproj": {
+              "projectPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.Services.Interfaces\\FinanceApp.Service.Interface.csproj"
             },
             "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.ModelConverter\\FinanceApp.ModelConverter.csproj": {
               "projectPath": "C:\\Users\\KalebLuse\\source\\repos\\finance-app-api\\FinanceApp\\FinanceApp.ModelConverter\\FinanceApp.ModelConverter.csproj"
@@ -3583,7 +3605,7 @@
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },

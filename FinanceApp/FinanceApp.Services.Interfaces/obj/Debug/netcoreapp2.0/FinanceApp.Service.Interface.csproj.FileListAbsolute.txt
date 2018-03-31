@@ -9,3 +9,5 @@ C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Services.I
 C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Services.Interfaces\obj\Debug\netcoreapp2.0\FinanceApp.Service.Interface.pdb
 C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Services.Interfaces\bin\Debug\netcoreapp2.0\FinanceApp.Model.dll
 C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Services.Interfaces\bin\Debug\netcoreapp2.0\FinanceApp.Model.pdb
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Services.Interfaces\bin\Debug\netcoreapp2.0\FinanceApp.Domain.Entity.dll
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Services.Interfaces\bin\Debug\netcoreapp2.0\FinanceApp.Domain.Entity.pdb

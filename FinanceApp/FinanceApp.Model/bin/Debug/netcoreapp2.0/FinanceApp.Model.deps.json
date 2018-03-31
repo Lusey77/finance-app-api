@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "FinanceApp.Model/1.0.0": {
+        "dependencies": {
+          "FinanceApp.Domain.Entity": "1.0.0"
+        },
         "runtime": {
           "FinanceApp.Model.dll": {}
+        }
+      },
+      "FinanceApp.Domain.Entity/1.0.0": {
+        "runtime": {
+          "FinanceApp.Domain.Entity.dll": {}
         }
       }
     }
   },
   "libraries": {
     "FinanceApp.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FinanceApp.Domain.Entity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

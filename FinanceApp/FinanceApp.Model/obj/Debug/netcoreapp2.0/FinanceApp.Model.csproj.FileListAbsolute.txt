@@ -7,3 +7,5 @@ C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Model\obj\
 C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Model\obj\Debug\netcoreapp2.0\FinanceApp.Model.AssemblyInfo.cs
 C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Model\obj\Debug\netcoreapp2.0\FinanceApp.Model.dll
 C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Model\obj\Debug\netcoreapp2.0\FinanceApp.Model.pdb
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Model\bin\Debug\netcoreapp2.0\FinanceApp.Domain.Entity.dll
+C:\Users\KalebLuse\source\repos\finance-app-api\FinanceApp\FinanceApp.Model\bin\Debug\netcoreapp2.0\FinanceApp.Domain.Entity.pdb

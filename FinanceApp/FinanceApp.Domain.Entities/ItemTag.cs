@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace FinanceApp.Domain.Entity
+﻿namespace FinanceApp.Domain.Entity
 {
     public class ItemTag : BaseModel
     {

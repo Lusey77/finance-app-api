@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using FinanceApp.Model;
-using FinanceApp.Services.Interfaces;
+using FinanceApp.Service.Interface;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FinanceApp.Controllers

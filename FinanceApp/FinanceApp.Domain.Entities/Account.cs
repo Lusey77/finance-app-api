@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace FinanceApp.Domain.Entity
 {
-    public class Account : BaseModel
+    public sealed class Account : BaseModel
     {
         public Account()
         {
-            this.Transactions = new HashSet<Transaction>();
+            Transactions = new HashSet<Transaction>();
         }
 
         public string Name { get; set; }
@@ -16,6 +14,6 @@ namespace FinanceApp.Domain.Entity
         public decimal Balance { get; set; }
 
         // Navigation Property(Account <- Transaction)
-        public virtual ICollection<Transaction> Transactions { get; set; }
+        public ICollection<Transaction> Transactions { get; set; }
     }
 }

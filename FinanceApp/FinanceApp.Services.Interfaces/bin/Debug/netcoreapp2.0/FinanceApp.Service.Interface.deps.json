@@ -14,7 +14,15 @@
           "FinanceApp.Service.Interface.dll": {}
         }
       },
+      "FinanceApp.Domain.Entity/1.0.0": {
+        "runtime": {
+          "FinanceApp.Domain.Entity.dll": {}
+        }
+      },
       "FinanceApp.Model/1.0.0": {
+        "dependencies": {
+          "FinanceApp.Domain.Entity": "1.0.0"
+        },
         "runtime": {
           "FinanceApp.Model.dll": {}
         }
@@ -23,6 +31,11 @@
   },
   "libraries": {
     "FinanceApp.Service.Interface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FinanceApp.Domain.Entity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -8,11 +8,17 @@
     ".NETCoreApp,Version=v2.0": {
       "FinanceApp.ModelConverter/1.0.0": {
         "dependencies": {
+          "FinanceApp.Core": "1.0.0",
           "FinanceApp.Domain.Entity": "1.0.0",
           "FinanceApp.Model": "1.0.0"
         },
         "runtime": {
           "FinanceApp.ModelConverter.dll": {}
+        }
+      },
+      "FinanceApp.Core/1.0.0": {
+        "runtime": {
+          "FinanceApp.Core.dll": {}
         }
       },
       "FinanceApp.Domain.Entity/1.0.0": {
@@ -21,6 +27,9 @@
         }
       },
       "FinanceApp.Model/1.0.0": {
+        "dependencies": {
+          "FinanceApp.Domain.Entity": "1.0.0"
+        },
         "runtime": {
           "FinanceApp.Model.dll": {}
         }
@@ -29,6 +38,11 @@
   },
   "libraries": {
     "FinanceApp.ModelConverter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FinanceApp.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

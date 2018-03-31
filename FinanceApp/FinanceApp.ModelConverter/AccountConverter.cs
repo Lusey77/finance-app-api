@@ -1,5 +1,6 @@
-﻿using FinanceApp.Domain.Entity;
+﻿using FinanceApp.Core;
 using FinanceApp.Model;
+using FinanceApp.Domain.Entity;
 
 namespace FinanceApp.ModelConverter
 {
